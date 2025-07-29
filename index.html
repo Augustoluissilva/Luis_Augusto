@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navbar Fixa -->
@@ -18,6 +19,8 @@
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                    <li><a href="#formacao" class="nav-link">Formação</a></li>
+                    <li><a href="#experiencias" class="nav-link">Experiências</a></li>
                     <li><a href="#projetos" class="nav-link">Projetos</a></li>
                     <li><a href="#embraer" class="nav-link">Embraer</a></li>
                     <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
@@ -32,21 +35,25 @@
         </div>
     </header>
 
-    <!-- Seção Home -->
-    <section id="home" class="section hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Luis Augusto dos Santos Silva</h1>
-                    <p class="hero-subtitle">Desenvolvedor Full Stack | Estudante de ADS | Apaixonado por Tecnologia!</p>
-                    <a href="#sobre" class="btn btn-primary">Conheça mais sobre mim <i class="fas fa-arrow-down"></i></a>
-                </div>
-                <div class="hero-image">
-                    <img src="img/luis.jpeg" alt="Luis Augusto" class="profile-img">
+  <section id="home" class="section hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Luis Augusto dos Santos Silva</h1>
+                <p class="hero-subtitle">Desenvolvedor Full Stack | Estudante de ADS | Apaixonado por Tecnologia!</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">Entre em contato</a>
+                    <a href="Currículo_LuisAugusto.pdf" download="Currículo_LuisAugusto_Silva.pdf" class="btn btn-secondary" id="download-cv">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
                 </div>
             </div>
+            <div class="hero-image">
+                <img src="img/luis.jpeg" alt="Luis Augusto" class="profile-img">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Seção Sobre Mim -->
     <section id="sobre" class="section sobre">
@@ -61,6 +68,74 @@
             </div>
         </div>
     </section>
+
+    <!-- Seção Formação Acadêmica -->
+    <section id="formacao" class="section formacao">
+        <div class="container">
+            <h2 class="section-title">Formação Acadêmica</h2>
+            <div class="formacao-content">
+                <div class="formacao-item">
+                    <div class="formacao-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Ensino Fundamental e Médio</h3>
+                    <p>SESI Caçapava – Concluído em 2024</p>
+                </div>
+                <div class="formacao-item">
+                    <div class="formacao-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Curso Técnico</h3>
+                    <p>Desenvolvimento de Sistemas – SENAI Taubaté Félix Guisard (2023–2024)</p>
+                </div>
+                <div class="formacao-item">
+                    <div class="formacao-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Graduação</h3>
+                    <p>Análise e Desenvolvimento de Sistemas – Faculdade SENAI-SP (2024 – atualmente)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Experiências e Eventos (ATUALIZADA) -->
+<section id="experiencias" class="section experiencias">
+    <div class="container">
+        <h2 class="section-title">Experiência Profissional</h2>
+        
+        <!-- Novo conteúdo de experiência profissional -->
+        <div class="experiencia-card" style="margin-bottom: 50px;">
+            <div class="competicao-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>Estagiário em Desenvolvimento de Software – SENAI</h3>
+            <p><em>(Atualmente)</em></p>
+            <p>Atuo como estagiário no SENAI, oferecendo suporte técnico a alunos e professores, colaborando em projetos de TI e no desenvolvimento de softwares com foco em soluções modernas e eficientes.</p>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 30px;">Eventos e Competições</h2>
+        <div class="experiencias-content">
+            <div class="eventos-section">
+                <h3>Eventos que participei em 2025:</h3>
+                <ul class="eventos-list">
+                    <li><i class="fas fa-calendar-check"></i> Semana da Tecnologia</li>
+                    <li><i class="fas fa-calendar-check"></i> Mundo SENAI</li>
+                    <li><i class="fas fa-calendar-check"></i> Tech Valley Summit 2025 (representando o SENAI Taubaté na área de cibersegurança)</li>
+                </ul>
+            </div>
+            <div class="competicoes-section">
+                <h3>Competição atual:</h3>
+                <div class="competicao-card">
+                    <div class="competicao-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <p>Participando da seletiva escolar da WorldSkills na modalidade Cybersecurity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Seção Projetos -->
     <section id="projetos" class="section projetos">
@@ -185,50 +260,62 @@
     </div>
 </section>
     <section id="contato" class="section contato">
-    <div class="container">
-        <h2 class="section-title">Contato</h2>
-        <div class="contato-content">
-            <div class="contato-info">
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:luis.agsilva22@gmail.com">luis.agsilva22@gmail.com</a>
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(12) 99727-5329</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Caçapava - SP</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:luis.agsilva22@gmail.com">luis.agsilva22@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Augustoluissilva" target="_blank">github.com/Augustoluissilva</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/luis-augusto-santos-silva/" target="_blank">linkedin.com/in/luis-augusto-santos-silva</a>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/Augustoluissilva" target="_blank">github.com/Augustoluissilva</a>
-                </div>
-                <div class="info-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/luis-augusto-santos-silva/" target="_blank">linkedin.com/in/Luis Augusto</a>
-                </div>
+                <form class="contato-form" action="https://formsubmit.co/luis.agsilva22@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
             </div>
-            <form class="contato-form" action="https://formsubmit.co/luis.agsilva22@gmail.com" method="POST">
-    <!-- Campo oculto para redirecionamento após envio -->
-    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-    
-    <!-- Campos do formulário -->
-    <div class="form-group">
-        <input type="text" name="nome" placeholder="Seu nome" required>
-    </div>
-    <div class="form-group">
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-    </div>
-    <div class="form-group">
-        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-</form>
-</section>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 Luis Augusto dos Santos Silva. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Luis Augusto dos Santos Silva. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Botão Voltar ao Topo -->
+<button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-plane-up"></i>
+</button>
 
     <script src="js/main.js"></script>
 </body>
 </html>
-
-<!-- Seção Contato -->

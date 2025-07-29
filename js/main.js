@@ -186,4 +186,34 @@ document.addEventListener('DOMContentLoaded', function() {
     // =============================================
     // Set initial active nav link
     navLinks[0].classList.add('active');
+
+    // BOTÃO VOLTAR AO TOPO
+    // =============================================
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    // Mostrar/ocultar botão conforme scroll
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+    
+    // Animação e rolagem suave
+    backToTopButton.addEventListener('click', function() {
+        // Adiciona classe de animação
+        this.classList.add('animate');
+        
+        // Rola para o topo suavemente
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        
+        // Remove a classe de animação após 0.8s
+        setTimeout(() => {
+            this.classList.remove('animate');
+        }, 800);
+    });
 });

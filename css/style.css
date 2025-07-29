@@ -710,3 +710,244 @@ body {
     background-color: #F44336;
     box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
 }
+
+/* Seção Formação Acadêmica - Atualizada */
+.formacao {
+    background-color: var(--branco);
+    padding: 80px 0;
+}
+
+.formacao .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.formacao-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.formacao-item {
+    background: var(--azul-profundo);
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formacao-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background: var(--azul-neutro);
+}
+
+.formacao-icon {
+    font-size: 2.5rem;
+    color: var(--branco);
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formacao-item h3 {
+    margin-bottom: 15px;
+    color: var(--branco);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.formacao-item p {
+    color: var(--cinza-claro);
+    line-height: 1.6;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .formacao-content {
+        gap: 20px;
+    }
+    
+    .formacao-item {
+        max-width: 300px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .formacao-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .formacao-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .formacao {
+        padding: 60px 0;
+    }
+    
+    .formacao-item {
+        padding: 20px;
+    }
+    
+    .formacao-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .formacao-icon {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Seção Experiências e Eventos */
+.experiencias {
+    background-color: var(--azul-neutro);
+    color: var(--branco);
+}
+
+.experiencias-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.eventos-section h3, .competicoes-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--azul-claro);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.eventos-section h3::after, .competicoes-section h3::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: var(--azul-claro);
+    bottom: 0;
+    left: 0;
+}
+
+.eventos-list {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.eventos-list li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.eventos-list li i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: var(--azul-claro);
+}
+
+.competicao-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.competicao-card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 115, 206, 0.2);
+}
+
+.competicao-icon {
+    font-size: 2rem;
+    color: var(--azul-claro);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .formacao-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .competicao-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ============================================= */
+/* BOTÃO VOLTAR AO TOPO */
+/* ============================================= */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--azul-claro);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 47, 108, 0.3);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #005fa3;
+    transform: translateY(-3px);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animação de voo */
+@keyframes fly-up {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.back-to-top.animate {
+    animation: fly-up 0.8s ease forwards;
+}
